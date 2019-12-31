@@ -1,0 +1,10 @@
+<!--pages/time-axis/time-axis.wxml-->
+<view class="container">
+  <!-- <component-nav>首页</component-nav> -->
+  <view class='my_body'>
+    <!-- <block wx:for="{{activities}}" wx:key="{{index}}">
+ <timeAxis   isCurent="{{item.isCurent||false}}" axisTitle="{{item.axisTitle}}" axisTime="{{item.axisTime}}"/>
+ </block> -->
+    <timeAxis wx:for="{{activities}}" wx:key="{{index}}" isCurent="{{item.isCurent}}" axisTitle="{{item.axisTitle}}" axisTime="{{item.axisTime}}" textArray="{{item.textArray}}" />
+  </view>
+</view>

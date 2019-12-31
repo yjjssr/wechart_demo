@@ -1,0 +1,4 @@
+/* pages/time-axis/time-axis.wxss */
+.my_body{
+  text-align: left;
+}

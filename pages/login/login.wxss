@@ -1,0 +1,256 @@
+/* pages/login/login.wxss */
+
+.input-area {
+  margin-top: 176rpx;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 22rpx;
+}
+
+.input-gap {
+  border: 0.75rpx solid #dcdddd;
+  background-color: white;
+  height: 80rpx;
+  margin-bottom: 35rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.password-gap {
+  height: 30rpx;
+  margin-top: 170rpx;
+  padding: 0 25rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.confirm-btn {
+  height: 90rpx;
+  margin-top: 28rpx;
+  margin-left: 22rpx;
+  margin-right: 22rpx;
+  background-color: #5a92e3;
+  font-size: 42rpx;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rpx;
+}
+
+.checkbox-label {
+  font-size: 24rpx;
+  color: #3e3a39;
+  width: 50%;
+}
+
+.btn-label {
+  font-size: 24rpx;
+  color: #5a92e3;
+}
+
+checkbox .wx-checkbox-input {
+  border-radius: 3rpx;
+  height: 30rpx;
+  width: 30rpx;
+  border: 0.75rpx solid #5a92e3;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 600rpx;
+  height: 720rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -360rpx -300rpx;
+  border-radius: 16rpx;
+}
+
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modal-content {
+  padding: 50rpx 32rpx;
+}
+
+.modal-text-view {
+  flex-basis: 120rpx;
+}
+
+.modal-text {
+  font-size: 28rpx;
+}
+
+.modal-input {
+  display: flex;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.modal-message {
+  display: flex;
+  font-size: 28rpx;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+
+.input {
+  flex-grow: 1;
+  height: 82rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  color: #333;
+  background: #fff;
+  border: 2rpx solid #ddd;
+}
+
+input-holder {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  width: 100%;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 100rpx;
+  position: absolute;
+  bottom: 0;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: #5a92e3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-btn {
+  font-size: 18rpx;
+  height: 82rpx;
+  width: 160rpx;
+  position: absolute;
+  right: 32rpx;
+  z-index: 10000;
+  background-color: #dedede;
+  border-radius: 0;
+  border: 1rpx solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_outer_wrap {
+  margin: 30rpx 30rpx 0rpx;
+  height: 100%;
+  padding-top: 20%;
+}
+
+.form_inner_wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60rpx;
+  overflow: hidden;
+  border-radius: 16rpx;
+}
+
+.form_item_wrap {
+  display: flex;
+  /* align-items:center; */
+  background-color: #fff;
+  height: 140rpx;
+}
+
+.form_item_inner_wrap {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e4e4e4;
+  width: 100%;
+  margin: 0 20rpx;
+}
+
+.item_inner_wrap_border {
+  border: none;
+}
+
+.image_wrap {
+  display: flex;
+  margin-left: 38rpx;
+  margin-right: 70rpx;
+}
+
+.my_image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.my_button{
+  /* background-color: #1F5BA3!important; */
+  background-image:linear-gradient(#fab519, #fa6607);
+  color:#FFFFFF;
+font-size:36rpx;
+border-radius:60rpx;
+
+}
+.password_back {
+  font-size: 30rpx;
+  /* margin-top: 82rpx; */
+  margin-top: 72rpx;
+  padding: 20rpx 0;
+  text-align: center;
+}
+
+.merchant_register {
+  font-size: 30rpx;
+  text-align: center;
+  position: absolute;
+  bottom: 82rpx;
+  left: 0;
+  width: 100%;
+  padding: 20rpx 0;
+  
+}

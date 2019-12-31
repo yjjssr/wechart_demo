@@ -2,7 +2,10 @@
 .userinfo {
   display: flex;
   flex-direction: column;
+  height: 100%;
   align-items: center;
+  padding-top: 40rpx;
+  
 }
 
 .userinfo-avatar {

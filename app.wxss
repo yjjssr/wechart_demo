@@ -1,5 +1,5 @@
 /**app.wxss**/
-.container {
+ /* .container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -7,4 +7,34 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}   */
+
+page {
+  /* background-color: #e5971f; */
+  background-image: linear-gradient(to right, #ffcd68, #fab379);
+}
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; *//* padding: 200rpx 0; */
+  box-sizing: border-box;
+  /* padding-top: 20rpx; */
+  overflow: auto;
+  /* padding-bottom: 30rpx; */
+  padding-bottom:48px;
+
+}
+.my_body {
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20rpx;
+}
+
+

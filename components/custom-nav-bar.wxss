@@ -1,0 +1,38 @@
+.nav {
+  width: 100%;
+  padding: 0 20rpx; 
+  position: fixed;
+  /* position:absolute; */
+  left:0;
+
+  /* overflow: hidden;  */
+  /* position: relative;
+  top: 0;
+  left: 0; */
+  /* z-index: 10; */
+  /* display: flex;
+  align-items: center; */
+}
+
+.nav-title {
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  font-size: 36rpx;
+  position: absolute;
+}
+
+.nav-title-text {
+  position: relative;
+  right: 22px;
+}
+.nav-title-image{
+  float: left;
+}
+.nav .back {
+ 
+  width: 22px;
+  height: 22px;
+  vertical-align:middle;
+
+}

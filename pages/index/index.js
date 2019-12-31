@@ -1,10 +1,11 @@
 //index.js
 //获取应用实例
+const http_ajax = require('../../http_ajax')
 const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: '首页',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -12,7 +13,7 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../image/image'
     })
   },
   onLoad: function () {
@@ -43,6 +44,15 @@ Page({
       })
     }
   },
+  onShow:function(){
+    app.checkLogin()//判断是否有openId，若没有返回到登录页面
+    if (typeof this.getTabBar === 'function' &&
+      this.getTabBar()) {
+      this.getTabBar().setData({
+        selected: 0
+      })
+    }
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -50,5 +60,11 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  uploadImage:function(){
+    wx.navigateTo({
+      url: '../image/image'
+    })
   }
+ 
 })

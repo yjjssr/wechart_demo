@@ -1,12 +1,32 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/login/login",
+    "pages/image/image",
+    "pages/time-axis/time-axis"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#dbdbdb",
+    "selectedColor": "#e5971f",
+    "list": [
+      {
+        "text": "上传图片",
+        "iconPath": "assets/images/upload_inactive.png",
+        "selectedIconPath": "assets/images/upload_active.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "时间轴",
+        "iconPath": "assets/images/axis_inactive.png",
+        "selectedIconPath": "assets/images/axis_active.png",
+        "pagePath": "pages/time-axis/time-axis"
+      }
+    ]
   }
 }
